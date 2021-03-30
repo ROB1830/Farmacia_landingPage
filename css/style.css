@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* body
+{
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    
+} */
+ main
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: none;
+    
+} 
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin: 20px;
+}
+
+
+.upper-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.txt-container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.nav-primero
+{
+    display: flex;
+    flex-direction: row;
+}
+.nav-primero p
+{
+    margin: 10px;
+    font-weight: 700;
+}
+
+.items-compra
+{
+    
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.items-compra p
+{
+    margin: 15px;
+}
+.compra-online 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carrito-compra 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* LOWER CONTAINER  */
+
+ /* .lower-container
+{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #42B756;
+    height: 100px;
+    
+    
+    
+    
+    
+}  */
+.lower-container 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #42B756;
+    
+    
+}
+.lower-container .items-medio
+{
+    
+    display: flex;
+    flex-direction: row;
+    
+    font-weight: 500;
+    
+}
+.lower-container .items-medio li
+{
+    padding-right: 10px;
+    
+    color: #fff;
+    padding: 15px;
+    z-index: 2;
+    transition: all 0.3s ease-in;
+}
+.lower-container .items-medio li:hover
+{
+    transform: translateY(-10px);
+}
+
+
+/* PRODUCTOS NAV */
+.lower-container  .productos-box
+{
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    border-right: 1px solid #000;
+    font-weight: 700;
+    height: 70px;
+    padding: 15px;
+    
+}
+
+.lower-container  .productos-box ul
+{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+    z-index: 2;
+    transition: all 0.3s ease-in;
+}
+.lower-container  .productos-box ul:hover
+{
+    transform: translateY(-10px);
+}
+
+.lower-container  .productos-box img
+{
+    height: 20px;
+}
+
+
+.lower-container  ul
+{
+    text-decoration: none;
+    list-style: none;
+}
+.lower-container  .buscador-box .buscador-container
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    
+
+}
+.buscador-container
+{
+    padding: 10px;
+}
+.buscador-container input#buscar
+{
+    width: 200px;
+    height: 30px;
+    font-size: 1.2em;
+    padding-left: 35px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    
+}
+.icono-buscador
+{
+    height: 20px;
+}
+
+.buscador-container .icono-buscador
+{
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+/* SECTION 1 */
+
+.section1
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.section1-box
+{
+    display: flex;
+    justify-content: center;
+}
+/* ********************** */
+.ofertas
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #42B756;
+    border-radius: 10px;
+    
+}
+
+.ofertas-text
+{
+    flex: 2 1 auto;
+    padding: 10px;
+}
+.ofertas-text .texto1
+{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 700;
+}
+.ofertas-text p
+{
+    font-size: 1em;
+
+}
+.ofertas-redes
+{
+    display: flex;
+    flex: 1 1 auto;
+}
+.ofertas-redes figcaption
+{
+    padding: 15px;
+    flex: 1 1 auto;
+}
+
+/* SECTION 2*********+ */
+/* .section2
+{
+    display: flex;
+    justify-content: center;
+}
+.section2-box
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.section2-box img
+{
+    margin: 10px;
+    transition: all 0.5s ease-out;
+}
+.section2-box img:hover
+{
+    transform: translateY(-10px);
+} */
+
+.section2-box
+{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: 
+    "img1 img2 img3 img4";
+    justify-content: center;
+    column-gap: 10px;
+   
+    
+}
+
+.img1
+{
+    grid-area: img1;
+}
+
+.img2
+{
+    grid-area: img2;
+}
+
+.img3
+{
+    grid-area: img3;
+}
+.img4
+{
+    grid-area: img4;
+}
+
+/* SECTION 3******* */
+
+ /*****CON FLEXBOX*****/
+ .section3
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #42B756;
+}
+
+.section3-contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+.section3-contenedor .conjunto-1
+{
+    display: flex;
+    /* si no metemos el height al quitar texto se va a bajar el conunto de donde hemos quitado el texto */
+    
+    height: 154px; 
+    width: 200px;
+    flex: 1 1 auto;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+.section3-contenedor .conjunto-1 .section-text h4
+{
+    text-align:unset;
+    width: 200px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER ******* */
+footer
+{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section4
+{
+    background: linear-gradient(90deg, rgba(125,125,125,1) 6%, rgba(202,211,213,1) 65%, rgba(218,218,218,1) 92%);
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.section4-texto
+{
+    padding: 10px;
+}
+.section4 .section4-redes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+}
+.section4 .section4-redes div
+{
+    height: 60px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+    width: 60px;
+}
+
+.section4 .section4-redes .circulos-redes1
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: #42B756;
+}
+.section4 .section4-redes .circulos-redes1 img
+{
+    height: 50px;
+}
+
+.section4 .section4-redes .circulos-redes2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077b6;
+}
+.section4 .section4-redes .circulos-redes2 img
+{
+    height: 50px;
+}
+.section4 .section4-redes .circulos-redes3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90e0ef;
+}
+.section4 .section4-redes .circulos-redes3 img
+{
+    height: 50px;
+}
+.section4 .section4-redes .circulos-redes4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5179e;
+}
+.section4 .section4-redes .circulos-redes4 img
+{
+    height: 50px;
+}
+
+.section4 .section4-redes .circulos-redes5
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f94144;
+}
+.section4 .section4-redes .circulos-redes5 img
+{
+    height: 50px;
+}
+
+.section4 .section4-redes .circulos-redes6
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb5bd;
+}
+.section4 .section4-redes .circulos-redes6 img
+{
+    margin-top: 18px;
+    height: 100px;
+}
+
+/* FOOTER REDED */
+.footer
+{
+    margin: 10px;
+   
+
+}
+.section5
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.section5-txt
+{
+    flex: 2 1 auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.section5-txt p
+{
+    color: #42B756;
+    
+}
+
+.section5-redes
+{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.section5-facebook 
+{
+    width: 100px;
+}
+.section5-facebook img
+{
+    float: left;
+    margin-right: 7px;
+
+  
+}
+.section5-twitter 
+{
+    width: 100px;
+}
+.section5-twitter img
+{
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+  
+}
+/* CURSOR *********** */
+.cursor
+{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    /* necesitamos que sea absoluto para qeu se salga del flujo html y con 
+    javascript vamos a moverlo pr toda la hojoa */
+    position: absolute;
+    /* esto es par aque se ponga el cursor justo en el medio del circulo */
+    transform: translate(-70%, -60%);
+    /* ahora el problema es qeu nosortos ahora no vamos a poder selecionar nada de nada con el circulo pq es
+     como si fuese un div el cual eta enciam de tel menu y el cursor encima, con lo cual no podemos clicar 
+     para arreglar esto lo haremos con esto*/
+     pointer-events: none;
+     transition: all 0.3s ease; 
+     /* ---(***)con esto de aqui resulta que nos hace la transicion en el moviemtno del cursor tambien y hayy un delay en el movimiento de la bola  */
+     /* para solucionarlo simpe,elente vamos a especificar que el lo qeu queremos qeu haga 
+     la transicion, Simpolemetne el tranform (el tmaño del circulo) y el fondo. lo otro no */
+     transition-property: background, transform;
+     transform-origin: 100% 100%;
+
+     /* 4-- si hacemos eso en javascrip resutla que nosotrs vmos a ahcer el hover pero no veremos el textoa pesar qeu que se haga blanco 
+     para ello tenmos que disminuir el z index a -1*/
+     z-index: 1;
+
+     backdrop-filter: grayscale();
+}
+
+.link-grow 
+{
+    transform: scale(2);
+    background: #000;
+}
+
+.hovered-link
+{
+    color: #fff;
+}
